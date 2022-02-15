@@ -1,0 +1,95 @@
+---
+BusName:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#BusName=
+  title: Mandatory for services where Type= is set to dbus.
+
+LockPersonality:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LockPersonality=
+  title: Defaults to no.
+
+MemoryDenyWriteExecute:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MemoryDenyWriteExecute=
+  title: Defaults to no.
+
+PrivateDevices:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateDevices=
+  title: Defaults to no.
+
+PrivateIPC:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateIPC=
+  title: Defaults to no.
+
+PrivateMounts:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateMounts=
+  title: Defaults to no.
+
+PrivateNetwork:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateNetwork=
+  title: Defaults to no.
+
+PrivateTmp:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateTmp=
+  title: Defaults to no.
+
+PrivateUsers:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateUsers=
+  title: Defaults to no.
+
+ProtectClock:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectClock=
+  title: Defaults to no.
+
+ProtectControlGroups:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectControlGroups=
+  title: Defaults to no.
+
+ProtectHome:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHome=
+  title: Defaults to no. This setting is implied if DynamicUser= is set.
+
+ProtectHostname:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHostname=
+  title: Defaults to no.
+
+ProtectKernelLogs:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelLogs=
+  title: Defaults to no.
+
+ProtectKernelModules:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelModules=
+  title: Defaults to no.
+
+ProtectKernelTunables:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelTunables=
+  title: Defaults to no.
+
+RemoveIPC:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RemoveIPC=
+  title: Defaults to no.
+
+RestrictAddressFamilies:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictAddressFamilies=
+  title: Defaults to all.
+
+RestrictFileSystems:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictFileSystems=
+  title: Defaults to all.
+
+RestrictNamespaces:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictNamespaces=
+  title: Defaults to no.
+
+RestrictRealtime:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictRealtime=
+  title: Defaults to no.
+
+RestrictSUIDSGID:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictSUIDSGID=
+  title: Defaults to no.
+
+Type:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#Type=
+  title: |
+    Defaults to simple if ExecStart= is specified but neither Type= nor BusName=.
+    Defaults to oneshot if neither Type= nor ExecStart= are specified.
+    Defaults to dbus if BusName= is specified.

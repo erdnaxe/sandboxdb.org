@@ -8,8 +8,16 @@
       {{- range $option_name, $values := $options -}}
       {{- range $value, $sources := $values -}}
       {{- $popularity := math.Min (len $sources) 3 }}
+      {{- $option_data := index $.Site.Data.options $option_name }}
       <li>
-        <code class="popularity-{{ $popularity }}">{{ $option_name }}={{ replace $value "\\\n" "" | safeHTML }}</code>
+        <code class="pop pop-{{ $popularity }}">
+          {{- if $option_data -}}
+          <a href="{{ $option_data.href }}" title="{{ $option_data.title }}" target="_blank">{{ $option_name }}</a>
+          {{- else -}}
+          {{ $option_name }}
+          {{- end -}}
+          ={{ replace $value "\\\n" "" | safeHTML -}}
+        </code>
         {{ range $source := $sources }}
         {{- partial "upstream_logo.html" $source }}
         {{- end -}}

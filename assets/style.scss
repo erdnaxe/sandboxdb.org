@@ -101,14 +101,20 @@ ul.pagination li a::after {
   margin-bottom: 3px;
 }
 
-.popularity-1 {
+.pop-1 {
   color: rgb(242, 242, 242);
 }
 
-.popularity-2 {
+.pop-2 {
   color: rgb(192, 242, 192);
 }
 
-.popularity-3 {
+.pop-3 {
   color: rgb(142, 242, 142);
+}
+
+.pop a {
+  color: inherit;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.5);
+  cursor: help;
 }
