@@ -2,11 +2,6 @@
 # Copyright (c) 2022 Alexandre Iooss <erdnaxe@crans.org>
 # SPDX-License-Identifier: MIT
 
-import configparser
-import json
-import os
-import urllib.request
-
 from utils.debian_source import (
     get_pkg_containing_services,
     get_pkgs_url,
