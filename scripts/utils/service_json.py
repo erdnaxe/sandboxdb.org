@@ -54,10 +54,10 @@ def update_service_json(data_path, source_name, service_content):
         for key, value in config.items(section):
             if type(value) == tuple:
                 value = " ".join(value)
-            if value == "yes":
-                value = "true"  # merge yes and true
-            if value == "no":
-                value = "false"  # merge no and false
+            if value.lower() == "true":
+                value = "yes"  # merge yes and true
+            if value.lower() == "false":
+                value = "no"  # merge no and false
             if key not in data["unit"][section]:
                 # adding missing option
                 data["unit"][section][key] = {}
