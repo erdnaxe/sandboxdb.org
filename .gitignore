@@ -5,4 +5,3 @@ __pycache__/
 
 # Database
 data/service/*.service.json
-content/service/*.service.md
