@@ -1,0 +1,10 @@
+[
+    {
+{{- range .RegularPages }}
+        "uri": "{{ .Permalink }}",
+        "title": "{{ .Title }}"
+    },
+    {
+{{- end -}}
+    }
+]

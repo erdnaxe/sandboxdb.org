@@ -1,0 +1,8 @@
+# Build files
+public/
+resources/
+__pycache__/
+
+# Database
+data/service/*.service.json
+content/service/*.service.md

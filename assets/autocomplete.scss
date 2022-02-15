@@ -1,0 +1,31 @@
+#autoComplete {
+  position: relative;
+  width: 10rem;
+}
+
+#autoComplete_list {
+  position: absolute;
+  z-index: 100;
+  padding: 0;
+  top: $navbar-height;
+  width: 18rem;
+}
+
+.autoComplete_result {
+  margin: 0 auto;
+  padding: 0.6rem;
+  max-width: 280px;
+  list-style: none;
+  background-color: darken($background-base-color, 2);
+  border: solid 1px darken($background-base-color, 5);
+}
+
+.autoComplete_result:hover,
+.autoComplete_result:focus,
+.autoComplete_selected {
+  background-color: lighten($background-base-color, 3);
+}
+
+.autoComplete_highlighted {
+  color: $primary;
+}

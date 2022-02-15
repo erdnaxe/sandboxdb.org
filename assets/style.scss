@@ -1,0 +1,114 @@
+$background-base-color: rgb(28, 27, 34);
+$scheme-main: rgb(28, 27, 34);
+$scheme-main-bis: rgb(28, 27, 34);
+$background: $scheme-main;
+$primary: rgb(102, 75, 255) !default;
+$footer-padding: 1rem;
+$text: #fff;
+$text-light: lighten($text, 10);
+$text-strong: darken($text, 5);
+$link: lighten($primary, 10);
+$link-hover: lighten($link, 5);
+$link-focus: darken($link, 5);
+$link-active: darken($link, 5);
+$input-placeholder-color: $text;
+
+@import "bulma/bulma";
+@import "autocomplete";
+
+body, html {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  padding: 3rem 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.source-logo {
+  height: 16px;
+  vertical-align: middle;
+}
+
+code {
+  color: #f2f2f2;
+  overflow-wrap: break-word;
+}
+
+li p {
+  margin-bottom: 0 !important;
+}
+
+ul {
+  margin-bottom: 0.5em;
+}
+
+ul.pagination {
+  justify-content: left;
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ul.pagination li {
+  border: 1px solid #dbdee0;
+  border-radius: 4px;
+  color: #f2f2f2;
+  height: 2.5em;
+  min-width: 2.5em;
+  margin: 0.25rem;
+  text-align: center;
+  list-style: none;
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+}
+
+ul.pagination li.active {
+  background-color: darken($primary, 6);
+  border-color: $primary;
+}
+
+ul.pagination li a:hover {
+  color: $primary;
+}
+
+ul.pagination li a,
+ul.pagination li.active a:hover {
+  color: #f2f2f2;
+  user-select: none;
+}
+
+ul.pagination li a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title {
+  display: inline-block;
+  border-bottom: 3px solid $primary;
+  margin-bottom: 3px;
+}
+
+.popularity-1 {
+  color: rgb(242, 242, 242);
+}
+
+.popularity-2 {
+  color: rgb(192, 242, 192);
+}
+
+.popularity-3 {
+  color: rgb(142, 242, 142);
+}

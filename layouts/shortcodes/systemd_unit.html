@@ -1,0 +1,22 @@
+{{ $data := index $.Site.Data.service (.Get 0) }}
+
+<ul>
+  {{ range $section_name, $options := $data.unit }}
+  <li>
+    <code class="has-text-weight-bold">[{{ $section_name }}]</code>
+    <ul class="mb-4">
+      {{- range $option_name, $values := $options -}}
+      {{- range $value, $sources := $values -}}
+      {{- $popularity := math.Min (len $sources) 3 }}
+      <li>
+        <code class="popularity-{{ $popularity }}">{{ $option_name }}={{ replace $value "\\\n" "" | safeHTML }}</code>
+        {{ range $source := $sources }}
+        {{- partial "upstream_logo.html" $source }}
+        {{- end -}}
+      </li>
+      {{- end -}}
+      {{- end }}
+    </ul>
+  </li>
+  {{- end }}
+</ul>

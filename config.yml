@@ -1,0 +1,31 @@
+baseURL: https://grimorio.org/
+title: Grimorio
+paginate: 100
+languageCode: en
+disablePathToLower: true
+
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+
+# Enable some features
+enableRobotsTXT: true
+enableEmoji: true
+
+# Generate JSON
+uglyurls: true
+outputs:
+  page: ["HTML", "JSON"]
+  section: ["HTML", "JSON"]
+
+# HTML in Markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  DefaultDescription: >-
+    Grimorio collects daemons from various GNU/Linux distributions.
+  DefaultKeywords: ["grimorio", "hardning", "database", "systemd", "service", "option"]

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">{{ .Title }}</h1>
+  <div class="content">
+    {{- $pages := union .RegularPages .Sections }}
+    {{- $paginator := .Paginate $pages }}
+    <ul>
+      {{ range $index, $page := $paginator.Pages -}}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ end }}
