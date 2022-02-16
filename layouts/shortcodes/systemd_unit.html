@@ -14,6 +14,7 @@
           {{- if $option_data -}}
           <a href="{{ $option_data.href }}" target="_blank">{{ $option_name }}</a>
           {{- else -}}
+          {{- warnf "`%s` option definition missing" $option_name -}}
           {{ $option_name }}
           {{- end -}}
           ={{ replace $value "\\\n" "" | safeHTML -}}
