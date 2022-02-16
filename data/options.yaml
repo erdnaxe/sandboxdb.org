@@ -5,13 +5,75 @@ Alias:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Alias=
 AllowIsolate:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AllowIsolate=
+AllowedCPUs:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#AllowedCPUs=
+AllowedMemoryNodes:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#AllowedMemoryNodes=
 Also:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Also=
 AmbientCapabilities:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#AmbientCapabilities=
 AppArmorProfile:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#AppArmorProfile=
+AssertACPower:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
 AssertArchitecture:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertCPUPressure:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertCPUs:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertCapability:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertControlGroupController:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertDirectoryNotEmpty:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertEnvironment:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertFileIsExecutable:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertFileNotEmpty:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertFirstBoot:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertGroup:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertHost:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertIOPressure:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertKernelCommandLine:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertKernelVersion:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertMemory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertMemoryPressure:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertNeedsUpdate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertOSRelease:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathExists:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathExistsGlob:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathIsDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathIsEncrypted:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathIsMountPoint:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathIsReadWrite:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertPathIsSymbolicLink:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertSecurity:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertUser:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+AssertVirtualization:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
 Before:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Before=
@@ -21,16 +83,26 @@ BindReadOnlyPaths:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#BindPaths=
 BindsTo:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#BindsTo=
+BlockIOAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#BlockIOAccounting=
 BusName:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#BusName=
+CPUAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#CPUAccounting=
 CPUAffinity:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUAffinity=
+CPUQuota:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#CPUQuota=
+CPUQuotaPeriodSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#CPUQuotaPeriodSec=
 CPUSchedulingPolicy:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingPolicy=
 CPUSchedulingPriority:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingPriority=
 CPUSchedulingResetOnFork:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingResetOnFork=
+CPUWeight:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#CPUWeight=weight
 CacheDirectory:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
 CacheDirectoryMode:
@@ -111,8 +183,16 @@ DefaultDependencies:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#DefaultDependencies=
 DefaultInstance:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#DefaultInstance=
+Delegate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#Delegate=
 Description:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Description=
+DeviceAllow:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#DeviceAllow=
+DevicePolicy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#DevicePolicy=auto%7Cclosed%7Cstrict
+DisableControllers:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#DisableControllers=
 Documentation:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Documentation=
 DynamicUser:
@@ -155,10 +235,14 @@ Group:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
 GuessMainPID:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#GuessMainPID=
+IOAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#IOAccounting=
 IOSchedulingClass:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IOSchedulingClass=
 IOSchedulingPriority:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IOSchedulingPriority=
+IPAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#IPAccounting=
 IPCNamespacePath:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IPCNamespacePath=
 IgnoreOnIsolate:
@@ -179,7 +263,37 @@ KillMode:
   href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#KillMode=
 KillSignal:
   href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#KillSignal=
+LimitAS:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitCORE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
 LimitCPU:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitDATA:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitFSIZE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitLOCKS:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitMEMLOCK:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitMSGQUEUE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitNICE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitNOFILE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitNPROC:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitRSS:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitRTPRIO:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitRTTIME:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitSIGPENDING:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LimitSTACK:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
 LockPersonality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LockPersonality=
@@ -195,6 +309,10 @@ LogsDirectory:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
 LogsDirectoryMode:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
+ManagedOOMMemoryPressureLimit:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#ManagedOOMMemoryPressureLimit=
+MemoryAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#MemoryAccounting=
 MemoryDenyWriteExecute:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MemoryDenyWriteExecute=
 MountAPIVFS:
@@ -291,6 +409,8 @@ RemainAfterExit:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RemainAfterExit=
 RemoveIPC:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RemoveIPC=
+RequiredBy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#WantedBy=
 Requires:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Requires=
 RequiresMountsFor:
@@ -313,6 +433,8 @@ RestrictFileSystems:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictFileSystems=
 RestrictNamespaces:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictNamespaces=
+RestrictNetworkInterfaces:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#RestrictNetworkInterfaces=
 RestrictRealtime:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictRealtime=
 RestrictSUIDSGID:
@@ -349,6 +471,8 @@ SendSIGHUP:
   href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#SendSIGHUP=
 SendSIGKILL:
   href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#SendSIGKILL=
+Slice:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#Slice=
 SmackProcessLabel:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SmackProcessLabel=
 Sockets:
@@ -365,6 +489,14 @@ StandardOutput:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#StandardOutput=
 StartLimitAction:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitAction=
+StartLimitBurst:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval
+StartLimitIntervalSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval
+StartupAllowedCPUs:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#AllowedCPUs=
+StartupCPUWeight:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#CPUWeight=weight
 StateDirectory:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
 StateDirectoryMode:
@@ -405,6 +537,8 @@ TTYVHangup:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYVHangup=
 TTYVTDisallocate:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYVTDisallocate=
+TasksAccounting:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#TasksAccounting=
 TemporaryFileSystem:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TemporaryFileSystem=
 TimeoutAbortSec:
