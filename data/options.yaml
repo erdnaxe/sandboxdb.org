@@ -1,95 +1,453 @@
 ---
+After:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Before=
+Alias:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Alias=
+AllowIsolate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AllowIsolate=
+Also:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Also=
+AmbientCapabilities:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#AmbientCapabilities=
+AppArmorProfile:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#AppArmorProfile=
+AssertArchitecture:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#AssertArchitecture=
+Before:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Before=
+BindPaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#BindPaths=
+BindReadOnlyPaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#BindPaths=
+BindsTo:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#BindsTo=
 BusName:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#BusName=
-  title: Mandatory for services where Type= is set to dbus.
-
+CPUAffinity:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUAffinity=
+CPUSchedulingPolicy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingPolicy=
+CPUSchedulingPriority:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingPriority=
+CPUSchedulingResetOnFork:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CPUSchedulingResetOnFork=
+CacheDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
+CacheDirectoryMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
+CapabilityBoundingSet:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CapabilityBoundingSet=
+CollectMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#CollectMode=
+ConditionACPower:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionACPower=
+ConditionArchitecture:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionArchitecture=
+ConditionCPUFeature:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionCPUFeature=
+ConditionCPUs:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionCPUs=
+ConditionCapability:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionCapability=
+ConditionControlGroupController:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionControlGroupController=
+ConditionDirectoryNotEmpty:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionDirectoryNotEmpty=
+ConditionEnvironment:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionEnvironment=
+ConditionFileIsExecutable:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionFileIsExecutable=
+ConditionFileNotEmpty:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionFileNotEmpty=
+ConditionFirmware:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionFirmware=
+ConditionFirstBoot:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionFirstBoot=
+ConditionGroup:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionGroup=
+ConditionHost:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionHost=
+ConditionKernelCommandLine:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionKernelCommandLine=
+ConditionKernelVersion:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionKernelVersion=
+ConditionMemory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionMemory=
+ConditionMemoryPressure:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionMemoryPressure=
+ConditionNeedsUpdate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionNeedsUpdate=
+ConditionOSRelease:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionOSRelease=
+ConditionPathExists:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathExists=
+ConditionPathExistsGlob:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathExistsGlob=
+ConditionPathIsDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathIsDirectory=
+ConditionPathIsEncrypted:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathIsEncrypted=
+ConditionPathIsMountPoint:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathIsMountPoint=
+ConditionPathIsReadWrite:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathIsReadWrite=
+ConditionPathIsSymbolicLink:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionPathIsSymbolicLink=
+ConditionSecurity:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionSecurity=
+ConditionUser:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionUser=
+ConditionVirtualization:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#ConditionVirtualization=
+ConfigurationDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
+ConfigurationDirectoryMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
+Conflicts:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Conflicts=
+CoredumpFilter:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#CoredumpFilter=
+DefaultDependencies:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#DefaultDependencies=
+DefaultInstance:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#DefaultInstance=
+Description:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Description=
+Documentation:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Documentation=
+DynamicUser:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#DynamicUser=
+Environment:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#Environment=
+EnvironmentFile:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#EnvironmentFile=
+ExecCondition:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecCondition=
+ExecPaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+ExecReload:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecReload=
+ExecSearchPath:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ExecSearchPath=
+ExecStart:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecStart=
+ExecStartPost:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecStartPre=
+ExecStartPre:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecStartPre=
+ExecStop:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecStop=
+ExecStopPost:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExecStopPost=
+ExitType:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#ExitType=
+ExtensionImages:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ExtensionImages=
+FailureAction:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#FailureAction=
+FailureActionExitStatus:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#FailureActionExitStatus=
+FileDescriptorStoreMax:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#FileDescriptorStoreMax=
+FinalKillSignal:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#FinalKillSignal=
+Group:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
+GuessMainPID:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#GuessMainPID=
+IOSchedulingClass:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IOSchedulingClass=
+IOSchedulingPriority:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IOSchedulingPriority=
+IPCNamespacePath:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IPCNamespacePath=
+IgnoreOnIsolate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#IgnoreOnIsolate=
+IgnoreSIGPIPE:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IgnoreSIGPIPE=
+InaccessiblePaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+JobTimeoutAction:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#JobTimeoutAction=
+JobTimeoutSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#JobTimeoutSec=
+JoinsNamespaceOf:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#JoinsNamespaceOf=
+KeyringMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#KeyringMode=
+KillMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#KillMode=
+KillSignal:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#KillSignal=
+LimitCPU:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
 LockPersonality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LockPersonality=
-  title: Defaults to no.
-
+LogExtraFields:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LogExtraFields=
+LogLevelMax:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LogLevelMax=
+LogNamespace:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LogNamespace=
+LogRateLimitIntervalSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LogRateLimitIntervalSec=
+LogsDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
+LogsDirectoryMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
 MemoryDenyWriteExecute:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MemoryDenyWriteExecute=
-  title: Defaults to no.
-
+MountAPIVFS:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MountAPIVFS=
+MountFlags:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MountFlags=
+MountImages:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MountImages=
+NUMAMask:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#NUMAMask=
+NUMAPolicy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#NUMAPolicy=
+NetworkNamespacePath:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#NetworkNamespacePath=
+Nice:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#Nice=
+NoExecPaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+NoNewPrivileges:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#NoNewPrivileges=
+NonBlocking:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#NonBlocking=
+NotifyAccess:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#NotifyAccess=
+OOMPolicy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#OOMPolicy=
+OOMScoreAdjust:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#OOMScoreAdjust=
+OnFailure:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#OnFailure=
+OnFailureJobMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#OnFailureJobMode=
+OnSuccess:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#OnSuccess=
+PAMName:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PAMName=
+PIDFile:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#PIDFile=
+PartOf:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PartOf=
+PassEnvironment:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PassEnvironment=
+Personality:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#Personality=
 PrivateDevices:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateDevices=
-  title: Defaults to no.
-
 PrivateIPC:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateIPC=
-  title: Defaults to no.
-
 PrivateMounts:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateMounts=
-  title: Defaults to no.
-
 PrivateNetwork:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateNetwork=
-  title: Defaults to no.
-
 PrivateTmp:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateTmp=
-  title: Defaults to no.
-
 PrivateUsers:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateUsers=
-  title: Defaults to no.
-
+ProcSubset:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProcSubset=
+PropagatesReloadTo:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesReloadTo=
+PropagatesStopTo:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesStopTo=
 ProtectClock:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectClock=
-  title: Defaults to no.
-
 ProtectControlGroups:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectControlGroups=
-  title: Defaults to no.
-
 ProtectHome:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHome=
-  title: Defaults to no. This setting is implied if DynamicUser= is set.
-
 ProtectHostname:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHostname=
-  title: Defaults to no.
-
 ProtectKernelLogs:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelLogs=
-  title: Defaults to no.
-
 ProtectKernelModules:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelModules=
-  title: Defaults to no.
-
 ProtectKernelTunables:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelTunables=
-  title: Defaults to no.
-
+ProtectProc:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectProc=
+ProtectSystem:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectSystem=
+ReadOnlyPaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+ReadWritePaths:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+RebootArgument:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#RebootArgument=
+RefuseManualStart:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#RefuseManualStart=
+RefuseManualStop:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#RefuseManualStart=
+ReloadPropagatedFrom:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesReloadTo=
+RemainAfterExit:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RemainAfterExit=
 RemoveIPC:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RemoveIPC=
-  title: Defaults to no.
-
+Requires:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Requires=
+RequiresMountsFor:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#RequiresMountsFor=
+Requisite:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Requisite=
+Restart:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart=
+RestartForceExitStatus:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RestartForceExitStatus=
+RestartKillSignal:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#RestartKillSignal=
+RestartPreventExitStatus:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RestartPreventExitStatus=
+RestartSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RestartSec=
 RestrictAddressFamilies:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictAddressFamilies=
-  title: Defaults to all.
-
 RestrictFileSystems:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictFileSystems=
-  title: Defaults to all.
-
 RestrictNamespaces:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictNamespaces=
-  title: Defaults to no.
-
 RestrictRealtime:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictRealtime=
-  title: Defaults to no.
-
 RestrictSUIDSGID:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictSUIDSGID=
-  title: Defaults to no.
-
+RootDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootDirectory=
+RootDirectoryStartOnly:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RootDirectoryStartOnly=
+RootHash:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootHash=
+RootHashSignature:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootHashSignature=
+RootImage:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootImage=
+RootImageOptions:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootImageOptions=
+RootVerity:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootVerity=
+RuntimeDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
+RuntimeDirectoryMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
+RuntimeDirectoryPreserve:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryPreserve=
+RuntimeMaxSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RuntimeMaxSec=
+RuntimeRandomizedExtraSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RuntimeRandomizedExtraSec=
+SELinuxContext:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SELinuxContext=
+SecureBits:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SecureBits=
+SendSIGHUP:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#SendSIGHUP=
+SendSIGKILL:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#SendSIGKILL=
+SmackProcessLabel:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SmackProcessLabel=
+Sockets:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#Sockets=
+SourcePath:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#SourcePath=
+StandardError:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#StandardError=
+StandardInput:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#StandardInput=
+StandardInputText:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#StandardInputText=
+StandardOutput:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#StandardOutput=
+StartLimitAction:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitAction=
+StateDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectory=
+StateDirectoryMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RuntimeDirectoryMode=
+StopPropagatedFrom:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesStopTo=
+StopWhenUnneeded:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StopWhenUnneeded=
+SuccessAction:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#FailureAction=
+SuccessExitStatus:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#SuccessExitStatus=
+SupplementaryGroups:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SupplementaryGroups=
+SyslogFacility:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SyslogFacility=
+SyslogIdentifier:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SyslogIdentifier=
+SyslogLevel:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SyslogLevel=
+SyslogLevelPrefix:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SyslogLevelPrefix=
+SystemCallArchitectures:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SystemCallArchitectures=
+SystemCallErrorNumber:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SystemCallErrorNumber=
+SystemCallFilter:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SystemCallFilter=
+SystemCallLog:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#SystemCallLog=
+TTYPath:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYPath=
+TTYReset:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYReset=
+TTYRows:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYRows=
+TTYVHangup:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYVHangup=
+TTYVTDisallocate:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TTYVTDisallocate=
+TemporaryFileSystem:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TemporaryFileSystem=
+TimeoutAbortSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutAbortSec=
+TimeoutCleanSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TimeoutCleanSec=
+TimeoutSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutSec=
+TimeoutStartFailureMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStartFailureMode=
+TimeoutStartSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStartSec=
+TimeoutStopFailureMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStartFailureMode=
+TimeoutStopSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStopSec=
+TimerSlackNSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TimerSlackNSec=
 Type:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#Type=
-  title: |
-    Defaults to simple if ExecStart= is specified but neither Type= nor BusName=.
-    Defaults to oneshot if neither Type= nor ExecStart= are specified.
-    Defaults to dbus if BusName= is specified.
+UMask:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#UMask=
+USBFunctionDescriptors:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#USBFunctionDescriptors=
+USBFunctionStrings:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#USBFunctionStrings=
+UnsetEnvironment:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#UnsetEnvironment=
+Upholds:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Upholds=
+User:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#User=
+UtmpIdentifier:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#UtmpIdentifier=
+UtmpMode:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#UtmpMode=
+WantedBy:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#WantedBy=
+Wants:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Wants=
+WatchdogSec:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#WatchdogSec=
+WatchdogSignal:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.kill.html#WatchdogSignal=
+WorkingDirectory:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#WorkingDirectory=
