@@ -58,7 +58,7 @@ def get_pkg_url_containing_services(mirror, dist="tumbleweed") -> [(str, str)]:
                 rel = version.get("rel")
                 url = f"{mirror}/{dist}/repo/oss/{parch}/{name}-{ver}-{rel}.{parch}.rpm"
 
-                if name == "systemd-tests":
+                if name == "systemd-tests" or name == "systemd-testsuite":
                     continue  # ignore
 
                 yield name, url
