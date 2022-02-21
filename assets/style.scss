@@ -95,6 +95,14 @@ ul.pagination li a::after {
   background-color: rgba(0, 0, 0, 0);
 }
 
+a.button {
+  font-size: 1.25rem;
+  background-color: darken($primary, 3);
+  border-color: transparent;
+  color: #fff;
+  padding: calc(0.5em - 1px) 1em;
+}
+
 .title {
   display: inline-block;
   border-bottom: 3px solid $primary;
