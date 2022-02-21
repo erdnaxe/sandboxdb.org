@@ -56,15 +56,14 @@ ul.pagination {
 }
 
 ul.pagination li {
-  border: 1px solid #dbdee0;
-  border-radius: 4px;
+  border: 1px solid hsl(147, 7%, 50%);
   color: #f2f2f2;
-  height: 2.5em;
-  min-width: 2.5em;
-  margin: 0.25rem;
+  height: 2em;
+  min-width: 2em;
+  margin: 0;
   text-align: center;
   list-style: none;
-  padding-top: calc(0.5em - 1px);
+  padding-top: calc(0.2em - 1px);
   position: relative;
 }
 
