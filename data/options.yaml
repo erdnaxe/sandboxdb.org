@@ -257,6 +257,18 @@ IgnoreSIGPIPE:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#IgnoreSIGPIPE=
 InaccessiblePaths:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
+InitrdBinary:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
+InitrdBuild:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
+InitrdCall:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
+InitrdLink:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
+InitrdPath:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
+InitrdUnit:
+  href: https://github.com/random-archer/mkinitcpio-systemd-tool
 JobTimeoutAction:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#JobTimeoutAction=
 JobTimeoutSec:
