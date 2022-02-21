@@ -82,8 +82,9 @@ def get_service_from_path(path) -> (str, str):
     service_name = path.split("/")[-1]
 
     # Remove NixOS specific from output
-    out = re.sub(r"/nix/store/[^/]+/", "/usr/", out)
-    out = re.sub(r"Environment=\"(PATH|TZDIR|LOCALE_ARCHIVE)=.+\"\n", "\n", out)
-    out = re.sub(r"X-[\w-]+=.+\n", "\n", out)
+    out = re.sub(r"/nix/store/[A-Za-z\d\-\.]+/", "/usr/", out)
+    out = re.sub(r"/nix/store/[a-z\d]+-", "", out)
+    out = re.sub(r"Environment=\"(PATH|TZDIR|LOCALE_ARCHIVE)=[^\"]*\"\n", "\n", out)
+    out = re.sub(r"X-[\w-]+=[^\n]+\n", "\n", out)
 
     return service_name, out
