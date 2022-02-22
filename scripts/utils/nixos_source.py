@@ -73,12 +73,12 @@ def get_services_store_path() -> [str]:
 
 def get_service_from_path(path) -> (str, str):
     """Return service name and content from path."""
-    print(f"Fetching {path} from https://cache.nixos.org/")
+    print(f"Fetching {path}")
     ret, out = subprocess.getstatusoutput(
         f"nix store cat --store https://cache.nixos.org/ {path} --extra-experimental-features nix-command"
     )
     if ret != 0:
-        print(f"Error while parsing {path}")
+        print("Error while fetching path")
         return "", ""
     service_name = path.split("/")[-1]
 
