@@ -54,6 +54,7 @@ def update_service_json(data_path, source_name, service_content):
         for key, value in config.items(section):
             if type(value) == tuple:
                 value = " ".join(value)
+            value = value.strip()
             if value.lower() == "true":
                 value = "yes"  # merge yes and true
             if value.lower() == "false":
