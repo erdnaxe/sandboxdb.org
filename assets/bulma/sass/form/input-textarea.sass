@@ -48,19 +48,3 @@ $textarea-colors: $form-colors !default
     box-shadow: none
     padding-left: 0
     padding-right: 0
-
-.textarea
-  @extend %input-textarea
-  display: block
-  max-width: 100%
-  min-width: 100%
-  padding: $textarea-padding
-  resize: vertical
-  &:not([rows])
-    max-height: $textarea-max-height
-    min-height: $textarea-min-height
-  &[rows]
-    height: initial
-  // Modifiers
-  &.has-fixed-size
-    resize: none
