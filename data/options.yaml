@@ -313,6 +313,8 @@ LimitSIGPENDING:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
 LimitSTACK:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LimitCPU=
+LoadCredential:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LoadCredential=ID:PATH
 LockPersonality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LockPersonality=
 LogExtraFields:
