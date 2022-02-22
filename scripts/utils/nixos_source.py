@@ -23,9 +23,10 @@ def get_services_store_path() -> [str]:
                     nix_tests.add(s[2:])
 
     services_drv = set()
-    for nix_path in nix_tests:
+    n_tests = len(nix_tests)
+    for i, nix_path in enumerate(nix_tests):
         # Instanciate derivation
-        print(f"Instanciating <nixos-unstable/nixos/tests/{nix_path}>")
+        print(f"Instanciating <nixos-unstable/nixos/tests/{nix_path}> ({i+1}/{n_tests})")
         p = subprocess.run(
             ["nix-instantiate", f"<nixos-unstable/nixos/tests/{nix_path}>"],
             capture_output=True,
