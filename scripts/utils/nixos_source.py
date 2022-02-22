@@ -55,7 +55,7 @@ def get_services_store_path() -> [str]:
                 path = drv.get("outputs", {}).get("out", {}).get("path")
                 if path and drv_pattern.search(path):
                     unit_name = path.split("-unit-")[-1]
-                    unit_name.replace("-.service", "@.service")
+                    unit_name = unit_name.replace("-.service", "@.service")
 
                     if (
                         unit_name.startswith("acme-")
