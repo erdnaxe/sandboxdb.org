@@ -125,3 +125,17 @@ a.button {
   text-decoration: underline dotted rgba(255, 255, 255, 0.5);
   cursor: help;
 }
+
+.pop a .version {
+  display: none;
+  position: absolute;
+  background-color: $background-base-color;
+  color: #fff;
+  padding: 0.5em;
+  border: 1px solid $primary;
+}
+
+.pop a:hover .version,
+.pop a:focus .version {
+  display: block;
+}

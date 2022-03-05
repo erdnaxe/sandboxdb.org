@@ -12,7 +12,12 @@
       <li>
         <code class="pop pop-{{ $popularity }}">
           {{- if $option_data -}}
-          <a href="{{ $option_data.href }}" target="_blank">{{ $option_name }}</a>
+          <a href="{{ $option_data.href }}" target="_blank">
+            {{- $option_name -}}
+            {{- if $option_data.version_introduced -}}
+              <div class="version">Introduced in systemd {{ $option_data.version_introduced }}</div>
+            {{- end -}}
+          </a>
           {{- else -}}
           {{- warnf "`%s` option definition missing" $option_name -}}
           {{ $option_name }}
