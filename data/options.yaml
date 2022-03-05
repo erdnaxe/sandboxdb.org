@@ -317,6 +317,7 @@ LoadCredential:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LoadCredential=ID:PATH
 LockPersonality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LockPersonality=
+  version_introduced: 235
 LogExtraFields:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#LogExtraFields=
 LogLevelMax:
@@ -335,6 +336,7 @@ MemoryAccounting:
   href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#MemoryAccounting=
 MemoryDenyWriteExecute:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#MemoryDenyWriteExecute=
+  version_introduced: 231
 MemoryHigh:
   href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#MemoryHigh=bytes
 MemoryLimit:
@@ -365,6 +367,7 @@ NoExecPaths:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
 NoNewPrivileges:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#NoNewPrivileges=
+  version_introduced: 239
 NonBlocking:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#NonBlocking=
 NotifyAccess:
@@ -391,6 +394,7 @@ Personality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#Personality=
 PrivateDevices:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateDevices=
+  version_introduced: 209
 PrivateIPC:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateIPC=
 PrivateMounts:
@@ -403,28 +407,38 @@ PrivateUsers:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PrivateUsers=
 ProcSubset:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProcSubset=
+  version_introduced: 247
 PropagatesReloadTo:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesReloadTo=
 PropagatesStopTo:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PropagatesStopTo=
 ProtectClock:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectClock=
+  version_introduced: 245
 ProtectControlGroups:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectControlGroups=
+  version_introduced: 232
 ProtectHome:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHome=
+  version_introduced: 214
 ProtectHostname:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectHostname=
+  version_introduced: 242
 ProtectKernelLogs:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelLogs=
+  version_introduced: 244
 ProtectKernelModules:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelModules=
+  version_introduced: 232
 ProtectKernelTunables:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectKernelTunables=
+  version_introduced: 232
 ProtectProc:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectProc=
+  version_introduced: 247
 ProtectSystem:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectSystem=
+  version_introduced: 214
 ReadOnlyPaths:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ReadWritePaths=
 ReadWritePaths:
@@ -441,6 +455,7 @@ RemainAfterExit:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#RemainAfterExit=
 RemoveIPC:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RemoveIPC=
+  version_introduced: 232
 RequiredBy:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#WantedBy=
 Requires:
@@ -465,12 +480,15 @@ RestrictFileSystems:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictFileSystems=
 RestrictNamespaces:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictNamespaces=
+  version_introduced: 233
 RestrictNetworkInterfaces:
   href: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#RestrictNetworkInterfaces=
 RestrictRealtime:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictRealtime=
+  version_introduced: 231
 RestrictSUIDSGID:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RestrictSUIDSGID=
+  version_introduced: 242
 RootDirectory:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#RootDirectory=
 RootDirectoryStartOnly:
@@ -591,6 +609,7 @@ TimeoutStopFailureMode:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStartFailureMode=
 TimeoutStopSec:
   href: https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStopSec=
+  version_introduced: 188
 TimerSlackNSec:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#TimerSlackNSec=
 Type:
