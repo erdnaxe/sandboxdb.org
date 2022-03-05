@@ -3,7 +3,7 @@
 
 import io
 import tarfile
-import urllib.request
+from urllib.request import urlopen, urlretrieve
 from tempfile import NamedTemporaryFile
 
 import zstandard
@@ -16,7 +16,7 @@ def get_pkg_url_containing_services(
     with NamedTemporaryFile() as compressed_f:
         url = f"{mirror}/{repository}/os/{arch}/{repository}.files.tar.gz"
         print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+        urlretrieve(url, compressed_f.name)
         f = tarfile.open(compressed_f.name)
         for member in f.getmembers():
             if not member.isdir():
@@ -59,10 +59,8 @@ def get_pkg_url_containing_services(
 
 def get_services_from_pkg(url) -> (str, str):
     """Download and extract service files from ArchLinux package."""
-    with NamedTemporaryFile() as compressed_f:
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
-
+    print(f"Downloading {url}")
+    with urlopen(url) as compressed_f:
         with zstandard.ZstdDecompressor().stream_reader(compressed_f) as zdata:
             try:
                 tar = io.BytesIO(zdata.read())

@@ -3,7 +3,7 @@
 
 import gzip
 import io
-import urllib.request
+from urllib.request import urlopen, urlretrieve
 import xml.etree.ElementTree as ET
 from tempfile import NamedTemporaryFile
 
@@ -15,10 +15,9 @@ def get_pkg_url_containing_services(
 ) -> [(str, str)]:
     """Return package URLs containing services files."""
     # Get location of primary and filelists metadata
-    with NamedTemporaryFile() as f:
-        url = f"{mirror}/{dist}/Everything/{arch}/os/repodata/repomd.xml"
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, f.name)
+    url = f"{mirror}/{dist}/Everything/{arch}/os/repodata/repomd.xml"
+    print(f"Downloading {url}")
+    with urlopen(url) as f:
         root = ET.parse(f).getroot()
         primary_location = root.find(
             "./*[@type='primary']/{http://linux.duke.edu/metadata/repo}location"
@@ -29,10 +28,9 @@ def get_pkg_url_containing_services(
 
     # Collect package name mapping from primary metadata
     name_mapping = {}
-    with NamedTemporaryFile() as compressed_f:
-        url = f"{mirror}/{dist}/Everything/{arch}/os/{primary_location}"
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+    url = f"{mirror}/{dist}/Everything/{arch}/os/{primary_location}"
+    print(f"Downloading {url}")
+    with urlopen(url) as compressed_f:
         with gzip.open(compressed_f) as f:
             root = ET.parse(f).getroot()
             pkgs = root.findall("./{http://linux.duke.edu/metadata/common}package")
@@ -45,10 +43,9 @@ def get_pkg_url_containing_services(
                         name_mapping[name] = f"{sourcename}/{name}"
 
     # Search service files in package filelists
-    with NamedTemporaryFile() as compressed_f:
-        url = f"{mirror}/{dist}/Everything/{arch}/os/{filelists_location}"
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+    url = f"{mirror}/{dist}/Everything/{arch}/os/{filelists_location}"
+    print(f"Downloading {url}")
+    with urlopen(url) as compressed_f:
         with gzip.open(compressed_f) as f:
             root = ET.parse(f).getroot()
             pkgs = root.findall("./{http://linux.duke.edu/metadata/filelists}package")
@@ -90,7 +87,7 @@ def get_services_from_pkg(url) -> [(str, bytes)]:
     """Download and extract service files from RPM package."""
     with NamedTemporaryFile() as compressed_f:
         print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+        urlretrieve(url, compressed_f.name)
 
         try:
             f = rpmfile.open(compressed_f.name)

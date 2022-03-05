@@ -5,7 +5,7 @@ import gzip
 import io
 import subprocess
 import tarfile
-import urllib.request
+from urllib.request import urlopen, urlretrieve
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
 
@@ -14,10 +14,9 @@ def get_pkg_containing_services(
 ) -> {str}:
     """Return package names containing services files."""
     pkgs = set()
-    with NamedTemporaryFile() as compressed_f:
-        url = f"{mirror}/dists/{dist}/{component}/Contents-{arch}.gz"
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+    url = f"{mirror}/dists/{dist}/{component}/Contents-{arch}.gz"
+    print(f"Downloading {url}")
+    with urlopen(url) as compressed_f:
         with gzip.open(compressed_f) as f:
             for line in f.readlines():
                 path, pkg = line.decode().strip().split(maxsplit=1)
@@ -33,10 +32,9 @@ def get_pkgs_url(
     pkgs_name, mirror, dist="testing", component="main", arch="all"
 ) -> [(str, str)]:
     """Get distribution package name and URL for each package."""
-    with NamedTemporaryFile() as compressed_f:
-        url = f"{mirror}/dists/{dist}/{component}/binary-{arch}/Packages.gz"
-        print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+    url = f"{mirror}/dists/{dist}/{component}/binary-{arch}/Packages.gz"
+    print(f"Downloading {url}")
+    with urlopen(url) as compressed_f:
         with gzip.open(compressed_f) as f:
             pkg = ""
             for line in f.readlines():
@@ -54,7 +52,7 @@ def get_services_from_deb(url) -> [(str, io.TextIOWrapper)]:
     """Download and extract service files from Debian package."""
     with NamedTemporaryFile() as compressed_f:
         print(f"Downloading {url}")
-        urllib.request.urlretrieve(url, compressed_f.name)
+        urlretrieve(url, compressed_f.name)
 
         with TemporaryDirectory() as d:
             ret, _ = subprocess.getstatusoutput(
