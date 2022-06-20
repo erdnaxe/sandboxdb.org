@@ -1,6 +1,6 @@
-# Grimorio
+# SandboxDB.org source code
 
-Grimorio collects daemons from various GNU/Linux distributions.
+Source code from [SandboxDB.org](https://sandboxdb.org).
 
 ## Repository structure
 
