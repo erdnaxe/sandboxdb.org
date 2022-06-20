@@ -390,6 +390,9 @@ PartOf:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#PartOf=
 PassEnvironment:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#PassEnvironment=
+PermissionsStartOnly:
+  href: https://manpages.debian.org/stretch/systemd/systemd.service.5.en.html
+  version_deprecated: 240
 Personality:
   href: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#Personality=
 PrivateDevices:
@@ -541,6 +544,9 @@ StartLimitAction:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitAction=
 StartLimitBurst:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval
+StartLimitInterval:
+  href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval
+  version_deprecated: 230
 StartLimitIntervalSec:
   href: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval
 StartupAllowedCPUs:
