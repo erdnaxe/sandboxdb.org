@@ -4,6 +4,7 @@
 import gzip
 import io
 from urllib.request import urlopen, urlretrieve
+from urllib.error import HTTPError
 import xml.etree.ElementTree as ET
 from tempfile import NamedTemporaryFile
 
@@ -66,7 +67,11 @@ def get_services_from_pkg(url) -> [(str, bytes)]:
     """Download and extract service files from RPM package."""
     with NamedTemporaryFile() as compressed_f:
         print(f"Downloading {url}")
-        urlretrieve(url, compressed_f.name)
+        try:
+            urlretrieve(url, compressed_f.name)
+        except urllib.error.HTTPError:
+            print("Failed to download, this mirror might be updating")
+            return tuple()
 
         try:
             f = rpmfile.open(compressed_f.name)
