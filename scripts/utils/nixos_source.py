@@ -6,16 +6,16 @@ import subprocess
 import json
 
 
-def get_services_store_path() -> [str]:
+def get_services_store_path(channel="nixos-unstable") -> [str]:
     """Return services files store paths.
 
-    You need to have nix with nixos-unstable channel.
+    You need to have nix with the corresponding channel.
     """
     drv_pattern = re.compile(r"-unit-.*\.service$")
 
     # Collect all NixOS tests
     nix_tests = set()
-    tests_path = "/nix/var/nix/profiles/per-user/root/channels/nixos-unstable/nixos/tests/all-tests.nix"
+    tests_path = f"/nix/var/nix/profiles/per-user/root/channels/{channel}/nixos/tests/all-tests.nix"
     with open(tests_path, "r") as f:
         for line in f.readlines():
             for s in line.strip().split(" "):
@@ -25,10 +25,16 @@ def get_services_store_path() -> [str]:
     services_drv = set()
     n_tests = len(nix_tests)
     for i, nix_path in enumerate(nix_tests):
-        # Instanciate derivation
-        print(f"Instanciating <nixos-unstable/nixos/tests/{nix_path}> ({i+1}/{n_tests})")
+        # Instanciate the derivation corresponding to /etc/systemd/system in
+        # test machine. For now we fail on tests using multiple machines.
+        print(f"Instanciating <{channel}/nixos/tests/{nix_path}> ({i+1}/{n_tests})")
         p = subprocess.run(
-            ["nix-instantiate", f"<nixos-unstable/nixos/tests/{nix_path}>"],
+            [
+                "nix-instantiate",
+                f"<{channel}/nixos/tests/{nix_path}>",
+                "-A",
+                "driver.nodes.machine.config.environment.etc.systemd/system",
+            ],
             capture_output=True,
         )
         if p.returncode != 0:
@@ -62,6 +68,7 @@ def get_services_store_path() -> [str]:
                         or "test.service" in unit_name
                         or unit_name.startswith("test")
                         or unit_name.startswith("network-addresses-")
+                        or unit_name.startswith("vboxtestlog-")
                     ):
                         continue  # ignore
 
@@ -85,7 +92,11 @@ def get_service_from_path(path) -> (str, str):
     # Remove NixOS specific from output
     out = re.sub(r"/nix/store/[A-Za-z\d\-\.]+/", "/usr/", out)
     out = re.sub(r"/nix/store/[a-z\d]+-", "", out)
-    out = re.sub(r"Environment=\"(PATH|TZDIR|LOCALE_ARCHIVE|PYTHONPATH|LD_LIBRARY_PATH)=[^\"]*\"\n", "\n", out)
+    out = re.sub(
+        r"Environment=\"(PATH|TZDIR|LOCALE_ARCHIVE|PYTHONPATH|LD_LIBRARY_PATH)=[^\"]*\"\n",
+        "\n",
+        out,
+    )
     out = re.sub(r"X-[\w-]+=[^\n]+\n", "\n", out)
 
     return service_name, out
