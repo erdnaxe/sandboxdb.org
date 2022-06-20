@@ -35,7 +35,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ "/" | relLangURL }}">
-          Grimorio
+          {{ .Site.Title }}
         </a>
         {{- range .Site.Menus.main }}
         <a href="{{ .URL }}" class="navbar-item">
@@ -55,9 +55,9 @@
 
   <footer class="footer footer-dark">
     <div class="content has-text-centered">
-      <span>Grimorio is a passion project</span>
+      <span>Last built on {{ now | time.Format ":date_long" }}</span>
       <span>&middot;</span>
-      <span><a href="https://github.com/erdnaxe/grimorio" target="_blank">Source code</a></span>
+      <span><a href="https://github.com/erdnaxe/sandboxdb.org" target="_blank">Source code</a></span>
       <span>&middot;</span>
       <span><a href="{{ ref . "api.md" }}">API</a></span>
     </div>
