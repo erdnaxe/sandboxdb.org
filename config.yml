@@ -1,5 +1,5 @@
-baseURL: https://grimorio.org/
-title: Grimorio
+baseURL: https://sandboxdb.org/
+title: SandboxDB.org
 paginate: 100
 languageCode: en
 disablePathToLower: true
@@ -27,5 +27,5 @@ markup:
 
 params:
   DefaultDescription: >-
-    Grimorio collects daemons from various GNU/Linux distributions.
-  DefaultKeywords: ["grimorio", "hardning", "database", "systemd", "service", "option"]
+    SandboxDB.org collects sandboxing options from various GNU/Linux distributions.
+  DefaultKeywords: ["sandbox", "hardening", "database", "systemd", "unit", "service", "option"]
